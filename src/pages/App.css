@@ -27,8 +27,6 @@
   to { transform: rotate(360deg); }
 }
 
-body.modal-open {
-  overflow: hidden;
-  position:fixed;
-  width: 100%;
+.ant-modal-body{
+  height: 100%;
 }
