@@ -9,7 +9,7 @@ export class MainTab extends Component {
   render() {
     return (
       <TabContainer>
-        <Tabs tabPosition="left">
+        {/* <Tabs tabPosition="left">
           <TabPane tab="Update Rate" key="1">
             <UpdateRate />
           </TabPane>
@@ -19,7 +19,8 @@ export class MainTab extends Component {
           <TabPane tab="Comming" key="3">
             Hello
           </TabPane>
-        </Tabs>
+        </Tabs> */}
+        <UpdateRate />
       </TabContainer>
     );
   }

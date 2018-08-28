@@ -115,7 +115,7 @@ export class UpdateRate extends Component {
         {isFetching && <Spin indicator={antIcon} />}
         {!isFetching && (
           <div>
-            <Row>
+            {/* <Row>
               <Col span={12}>
                 <Button
                   type="primary"
@@ -128,7 +128,7 @@ export class UpdateRate extends Component {
               <Col span={12}>
                 <TimeStamp>{timestamp01}</TimeStamp>
               </Col>
-            </Row>
+            </Row> */}
             <Row style={{ paddingTop: 20 }}>
               <Col span={12}>
                 <Button
@@ -147,9 +147,11 @@ export class UpdateRate extends Component {
         )}
         <Modal
           title="Update"
+          style={{ top: 20 }}
           visible={this.state.visible}
           onOk={this.handleOk}
           onCancel={this.handleCancel}
+          maskClosable={false}
         >
           {logs.map(content => (
             <div>

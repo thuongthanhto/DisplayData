@@ -4,6 +4,5 @@ export const config = {
   idButton2: '8107847',
   textButton1:
     'Update Case: 6215262 - CASE3 - purchase_900000_59_790_SFR_PRI_N',
-  textButton2:
-    'Update Case: 8107847 - Dan Le - purchase_900000_58_790_SFR_PRI_N',
+  textButton2: '8107847 - Dan Le',
 };
