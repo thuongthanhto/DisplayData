@@ -17,3 +17,12 @@ export const TabContainer = styled.div`
 export const TimeStamp = styled.div`
   padding-left: 10px;
 `;
+
+export const CustomModal = styled(Modal)`
+  @media only screen and (max-width: 480px) {
+    .ant-modal-body {
+      max-height: 420px;
+      overflow-y: auto;
+    }
+  }
+`;

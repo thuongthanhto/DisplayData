@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { config } from '../config/index';
 import { Col, Row, Button, Modal } from 'antd';
 import { Spin, Icon } from 'antd';
-import { TimeStamp } from './styled';
+import { TimeStamp, CustomModal } from './styled';
 import { getLogs } from '../socket/log';
 
 const GET_ALL_DATA = `${config.apiEndPoint}/api/rates/getalldata/`;
@@ -143,7 +143,7 @@ export class UpdateRate extends Component {
             </Row>
           </div>
         )}
-        <Modal
+        <CustomModal
           title="Update"
           style={{ top: 20 }}
           visible={this.state.visible}
@@ -158,7 +158,7 @@ export class UpdateRate extends Component {
               <br />
             </div>
           ))}
-        </Modal>
+        </CustomModal>
       </div>
     );
   }
