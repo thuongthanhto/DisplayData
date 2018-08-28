@@ -100,7 +100,6 @@ export class UpdateRate extends Component {
 
           this.state.timestamp01;
           this.state.timestamp02;
-          debugger;
         }
       })
       .catch(err => {
@@ -153,8 +152,8 @@ export class UpdateRate extends Component {
           onCancel={this.handleCancel}
           maskClosable={false}
         >
-          {logs.map(content => (
-            <div>
+          {logs.map((content, index) => (
+            <div key={index}>
               <span style={{ wordBreak: 'break-all' }}>{content}</span>
               <br />
               <br />
