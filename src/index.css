@@ -3,9 +3,3 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
-@media only screen and (max-width: 480px) {
-  .touch .modal .ant-modal-body {
-    max-height: none; 
-  }
-}
