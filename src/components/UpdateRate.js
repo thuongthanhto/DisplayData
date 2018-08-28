@@ -44,7 +44,7 @@ export class UpdateRate extends Component {
   };
 
   toggle(id) {
-    if (this.state.visible == false) {
+    if (this.state.visible === false) {
       this.setState({ logs: [], visible: true });
       this.getAllData(id);
     }
@@ -61,12 +61,14 @@ export class UpdateRate extends Component {
         return response.json();
       })
       .then(data => {
-        if (data.status == 200) {
+        if (data.status === 200) {
+          debugger;
           console.log('Update Done');
           this.getTimestamp();
         }
       })
       .catch(err => {
+        debugger;
         console.log(err);
       });
   }
@@ -84,7 +86,7 @@ export class UpdateRate extends Component {
       })
       .then(data => {
         this.setState({ isFetching: false });
-        if (data.status == 200) {
+        if (data.status === 200) {
           data.data.forEach(element => {
             if (element.id === config.idButton1) {
               this.setState({
@@ -97,9 +99,6 @@ export class UpdateRate extends Component {
               });
             }
           });
-
-          this.state.timestamp01;
-          this.state.timestamp02;
         }
       })
       .catch(err => {

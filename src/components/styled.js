@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Modal } from 'antd';
 
 export const HeaderContainer = styled.div`
   display: flex;
